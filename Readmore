@@ -1,0 +1,59 @@
+Faculty Feedback System
+Overview
+The Faculty Feedback System is a Java-based application designed to streamline and manage student feedback for faculty members. This system enables students to provide structured feedback for various subjects and teachers, while also allowing administrators to access and review the collected feedback. It features an interactive GUI built using Java Swing, offering a user-friendly and efficient way to collect and display feedback.
+
+Features
+Student Functionality
+Feedback Submission: Students can provide feedback for multiple teachers across four predefined questions.
+Mentor Display: Automatically assigns and displays mentors based on the student USN format.
+Validation: Ensures unique feedback by validating student USN and preventing duplicate submissions.
+Administrator Functionality
+Admin Login: Secure login system with predefined credentials for accessing admin features.
+View All Feedback: Admins can review detailed feedback from all students across all teachers.
+Filter Feedback by Teacher: View specific feedback for individual teachers using a teacher selection dropdown.
+General Features
+Dynamic Teacher Management: Automatically cycles through a predefined list of teachers for feedback collection.
+Clear Session: Allows resetting feedback sessions for smooth transitions between students.
+User-Friendly Interface: Interactive and clean GUI for easy navigation and usage.
+Technology Stack
+Language: Java
+Framework: Java Swing for GUI development
+Data Handling: Feedback is stored in memory using ArrayList and HashSet for efficient processing.
+How It Works
+Student Interface:
+
+Students enter their name and USN.
+Based on the USN, the corresponding mentor is displayed.
+Students provide feedback for four questions per teacher and proceed to the next teacher in the list.
+Admin Interface:
+
+Admin logs in using the secure credentials (Username: AIML, Password: ROOT123).
+Admin can view all feedback or filter by a specific teacher.
+Validation Rules
+USN Format: Accepts valid USNs in the format 2BL23CIXXX, where XXX is a 3-digit number.
+Mentor Assignment:
+USNs from 001–020: Mentor Sana Mulla
+USNs from 021–044: Mentor Gurudevi Mam
+USNs from 045–063: Mentor Poornima Mamadapur
+Invalid USNs are flagged, and submission is disabled.
+Usage
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/your-username/Faculty-Feedback-System.git  
+Compile and run the program:
+bash
+Copy code
+javac FacultyFeedbackSystem.java  
+java FacultyFeedbackSystem  
+Follow the on-screen instructions to navigate the student and admin interfaces.
+Screenshots
+(Add relevant screenshots of the application's GUI for better visual understanding.)
+
+Future Enhancements
+Persistent storage for feedback using a database or file system.
+Enhanced user authentication for both students and admins.
+Add customization options for feedback questions and teacher lists.
+Contribution
+Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request for any enhancements or bug fixes.
+
